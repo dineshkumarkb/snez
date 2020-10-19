@@ -1,0 +1,19 @@
+version: '3'
+services:
+  movie-services:
+    build: ./ticketing_system/movie-info/
+    ports:
+      - 5000:5000
+  food-services:
+    build: ./ticketing_system/snacks-info
+    ports:
+      - 5001:5001
+  user-services:
+    build: ./ticketing_system/user-info
+    ports:
+      - 5002:5002
+  auth-services:
+    build: ./ticketing_system/auth-info
+    ports:
+      - 5003:5003
+
